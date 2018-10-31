@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="graph_xAxis_grid_line_color">#50666666</color>
+    <color name="graph_axis_color">#ea464545</color>
+    <color name="graph_axis_text_color">#000000</color>
+
+</resources>

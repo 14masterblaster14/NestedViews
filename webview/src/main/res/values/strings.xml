@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">WebView</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="action_bookmark">Bookmark</string>
+    <string name="action_back">Backward</string>
+    <string name="action_forward">Forward</string>
+    <string name="action_load_url">Website</string>
+    <string name="action_htlm">Html page</string>
+</resources>

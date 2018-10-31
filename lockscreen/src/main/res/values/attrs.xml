@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="lock_screen_backgroung" format="reference|integer" />
+    <attr name="lock_screen_button_background" format="reference|integer" />
+
+</resources>

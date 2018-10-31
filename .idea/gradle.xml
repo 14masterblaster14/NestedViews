@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/accessibility" />
+            <option value="$PROJECT_DIR$/alarmmanager" />
+            <option value="$PROJECT_DIR$/animations" />
+            <option value="$PROJECT_DIR$/apirecyclerviewtimber" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/basicsanitycheck" />
+            <option value="$PROJECT_DIR$/charts" />
+            <option value="$PROJECT_DIR$/intermediaterecyclerview" />
+            <option value="$PROJECT_DIR$/intermediaterecyclerview1" />
+            <option value="$PROJECT_DIR$/lockscreen" />
+            <option value="$PROJECT_DIR$/mylibrary" />
+            <option value="$PROJECT_DIR$/mylibraryusage" />
+            <option value="$PROJECT_DIR$/nestedview" />
+            <option value="$PROJECT_DIR$/notifications" />
+            <option value="$PROJECT_DIR$/stickyheaderswipelayout" />
+            <option value="$PROJECT_DIR$/viewpager" />
+            <option value="$PROJECT_DIR$/viewpager1" />
+            <option value="$PROJECT_DIR$/webview" />
+            <option value="$PROJECT_DIR$/widget" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

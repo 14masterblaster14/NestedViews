@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:configure="com.example.widget.coffeeapp.CoffeeLoggerWidgetConfigureActivity"
+    android:initialKeyguardLayout="@layout/coffee_logger_widget"
+    android:initialLayout="@layout/coffee_logger_widget"
+    android:minWidth="250dp"
+    android:minHeight="110dp"
+    android:previewImage="@drawable/example_appwidget_preview"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="86400000"
+    android:widgetCategory="home_screen|keyguard"></appwidget-provider>
+
+
+    <!--
+
+        android:configure="com.example.widget.coffeeapp.CoffeeLoggerWidgetConfigureActivity"
+
+      This is necessary to include ,in order to invoke the CoffeeLoggerWidgetConfigureActivity
+      as soon as user adds the widget to homescreen
+
+    -->

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.animations">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".animationsactivities.NoAnimationActivity" />
+        <activity android:name=".animationsactivities.LaunchRocketValueAnimatorAnimationActivity" />
+        <activity android:name=".animationsactivities.RotateRocketAnimationActivity" />
+        <activity android:name=".animationsactivities.AccelerateRocketAnimationActivity" />
+        <activity android:name=".animationsactivities.LaunchRocketObjectAnimatorAnimationActivity" />
+        <activity android:name=".animationsactivities.ColorAnimationActivity" />
+        <activity android:name=".animationsactivities.LaunchAndSpinAnimatorSetAnimationActivity" />
+        <activity android:name=".animationsactivities.LaunchAndSpinViewPropertyAnimatorAnimationActivity" />
+        <activity android:name=".animationsactivities.FlyWithDogeAnimationActivity" />
+        <activity android:name=".animationsactivities.WithListenerAnimationActivity" />
+        <activity android:name=".animationsactivities.FlyThereAndBackAnimationActivity" />
+        <activity android:name=".animationsactivities.XmlAnimationActivity" />
+        <activity android:name=".animationsactivities.BaseAnimationActivity" />
+
+    </application>
+
+</manifest>

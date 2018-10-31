@@ -1,0 +1,50 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--    Lockscreen Style Started -->
+
+    <style name="LockScrenStyle">
+        <item name="android:background">@drawable/lockscreen_background</item>
+    </style>
+
+    <style name="LockScreenButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="android:background">@drawable/lockscreen_button_touch_selector</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="LockScreenFingrePrintButtonStyle">
+        <item name="android:src">@drawable/lockscreen_fingerprint</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="LockScreenDeleteButtonStyle">
+        <item name="android:src">@drawable/lockscreen_delete</item>
+        <item name="android:padding">20dp</item>
+    </style>
+
+    <style name="LockScreenPinIndicatorStyle">
+        <item name="android:checkboxStyle">@style/DefaultPinIndicatorStyle</item>
+    </style>
+
+    <style name="DefaultPinIndicatorStyle">
+        <item name="android:button">@drawable/lockscreen_pin_indicator_selector</item>
+    </style>
+
+</resources>

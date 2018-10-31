@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Accessibility</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Label for the plain button -->
+    <string name="button_text">Compose</string>
+
+    <!-- Checkbox labels -->
+    <string name="checkbox_text_jetpack">Enable jetpack</string>
+    <string name="checkbox_text_hyperspace">Enable hyperspace</string>
+    <string name="count_updated">Count is updated as %s</string>
+    <string name="count_format">%1$d of %2$d</string>
+
+</resources>

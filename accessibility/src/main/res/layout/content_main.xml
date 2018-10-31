@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <!-- If you are updating any view which is having accessibility feature
+         then you can make that view read out through programs
+         via "announceForAccessibility()" on a view -->
+
+
+    <!-- A plain text button.  The button label is read by TalkBack.
+    No content description needed -->
+    <Button
+        android:id="@+id/button_plain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:nextFocusForward="@id/button_image"
+        android:text="@string/button_text"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- An ImageButton. TalkBack cannot identify this button and
+    reports it as "unlabelled button". Use android:contentDescription
+    to provide a speakable label for the image. -->
+    <ImageButton
+        android:id="@+id/button_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:contentDescription="Discard"
+        android:nextFocusForward="@id/checkbox_jetpack"
+        app:layout_constraintLeft_toRightOf="@+id/button_plain"
+        app:layout_constraintTop_toTopOf="@+id/button_plain"
+        app:srcCompat="@drawable/ic_action_discard" />
+
+    <!-- Checkboxes. The checkbox text is read by TalkBack. No content
+    description is needed. -->
+    <CheckBox
+        android:id="@+id/checkbox_jetpack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/checkbox_text_jetpack"
+        app:layout_constraintLeft_toLeftOf="@+id/button_plain"
+        app:layout_constraintTop_toBottomOf="@+id/button_plain" />
+
+    <CheckBox
+        android:id="@+id/checkbox_hyperspace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox_text_hyperspace"
+        app:layout_constraintLeft_toLeftOf="@+id/checkbox_jetpack"
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_jetpack" />
+
+    <!-- An ImageView.  By default, ImageViews are treated as decorative images
+    with no functionality or label and are ignored by TalkBack. Use
+    android:contentDescription to provide a speakable label for the image. Use
+    android:focusable to indicate this is a meaningful element.
+    in the app. -->
+
+    <ImageView
+        android:id="@+id/image_partly_cloudy"
+        android:layout_width="200dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Partly Cloudy "
+        android:focusable="true"
+        app:layout_constraintLeft_toLeftOf="@+id/checkbox_hyperspace"
+
+        app:layout_constraintTop_toBottomOf="@+id/checkbox_hyperspace"
+        app:srcCompat="@drawable/partly_cloudy" />
+    <!-- Note: In addition to making an item focusable, you can add focus-related attributes to the views in your app.
+    The attributes include nextFocusUp, nextFocusDown, nextFocusLeft, nextFocusRight, and nextFocusForward. -->
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Green box "
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintLeft_toRightOf="@drawable/partly_cloudy"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/image_partly_cloudy" />
+
+    <!-- A plain text view.  The text is read by TalkBack.
+   No content description needed -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:labelFor="@id/editText_comments"
+        android:text="This is Accessibility Demo"
+        android:textSize="20sp"
+
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/image_partly_cloudy" />
+
+    <!-- A plain Edit Text view.  The hint and "edittext" is read by TalkBack.
+        No content description needed, need to include hint instead -->
+    <EditText
+        android:id="@+id/editText_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_orange_light"
+        android:hint="Enter Your Comments"
+        app:layout_constraintTop_toBottomOf="@id/textView" />
+
+    <TextView
+        android:id="@+id/textView_count"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@android:color/holo_blue_light"
+        android:text="7"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editText_comments" />
+
+</android.support.constraint.ConstraintLayout>

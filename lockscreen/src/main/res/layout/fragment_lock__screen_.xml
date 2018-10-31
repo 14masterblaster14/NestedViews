@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".lock_screen.Lock_Screen_Fragment">
+
+    <ImageView
+        android:id="@+id/lockscreen_background"
+        style="?lock_screen_backgroung"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/LockScrenStyle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/lockscreen_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@id/lockscreen_keypad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Input pin code or use fingerprint" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/lockscreen_keypad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.7">
+
+        <TextView
+            android:id="@+id/lockscreen_button1"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/lockscreen_button4"
+            app:layout_constraintEnd_toStartOf="@id/lockscreen_button2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/lockscreen_button2"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/lockscreen_button5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="2" />
+
+        <TextView
+            android:id="@+id/lockscreen_button3"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/lockscreen_button6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lockscreen_button2"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="3" />
+
+        <TextView
+            android:id="@+id/lockscreen_button4"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/lockscreen_button7"
+            app:layout_constraintEnd_toStartOf="@id/lockscreen_button5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lockscreen_button1"
+            tools:text="4" />
+
+        <TextView
+            android:id="@+id/lockscreen_button5"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/lockscreen_button8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lockscreen_button2"
+            tools:text="5" />
+
+
+        <TextView
+            android:id="@+id/lockscreen_button6"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/lockscreen_button9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lockscreen_button5"
+            app:layout_constraintTop_toBottomOf="@id/lockscreen_button3"
+            tools:text="6" />
+
+        <TextView
+            android:id="@+id/lockscreen_button7"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/lockscreen_button_forgot_password"
+            app:layout_constraintEnd_toStartOf="@id/lockscreen_button8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lockscreen_button4"
+            tools:text="7" />
+
+
+        <TextView
+            android:id="@+id/lockscreen_button8"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/lockscreen_button0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lockscreen_button5"
+            tools:text="8" />
+
+
+        <TextView
+            android:id="@+id/lockscreen_button9"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toTopOf="@id/lockscreen_frame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lockscreen_button8"
+            app:layout_constraintTop_toBottomOf="@id/lockscreen_button6"
+            tools:text="9" />
+
+
+        <TextView
+            android:id="@+id/lockscreen_button0"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            android:theme="@style/LockScreenButtonStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lockscreen_button8"
+            tools:text="0" />
+
+        <TextView
+            android:id="@+id/lockscreen_button_forgot_password"
+            style="?lock_screen_backgroung"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/lockscreen_button0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/lockscreen_button7"
+            tools:text="Forgot ?" />
+
+        <FrameLayout
+            android:id="@+id/lockscreen_frame"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="12dp"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/lockscreen_button0"
+            app:layout_constraintTop_toBottomOf="@id/lockscreen_button9">
+
+            <ImageView
+                android:id="@+id/lockscreen_button_fingerprint"
+                style="?lock_screen_backgroung"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:theme="@style/LockScreenFingrePrintButtonStyle"
+                android:visibility="visible"
+                tools:text="Finger" />
+
+            <ImageView
+                android:id="@+id/lockscreen_button_delete"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:theme="@style/LockScreenDeleteButtonStyle"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

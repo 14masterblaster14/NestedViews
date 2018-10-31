@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">notifications</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="test_follower_title">Follower Notifications</string>
+    <string name="test_dm_title">Message Notification</string>
+
+    <!-- Notification Channel Name -->
+    <string name="notification_channel_followers">Follower Notification Channel</string>
+    <string name="notification_channel_direct_message">Direct Messages Channel</string>
+
+    <!-- Notification Title -->
+    <string name="follower_title_notification">Follower</string>
+    <string name="direct_message_title_notification">Direct Message</string>
+
+    <!-- Notification Description -->
+    <string name="follower_added_notification_body">%1$s is now following you!</string>
+    <string name="follower_removed_notification_body">%1$s has stopped following you.</string>
+
+    <string name="dm_friend_notification_body">%1$s: What\'s up?</string>
+    <string name="dm_coworker_notification_body">%1$s: Have you finished the report?</string>
+
+</resources>

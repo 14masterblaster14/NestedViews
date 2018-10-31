@@ -1,0 +1,44 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.webview.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_load_url"
+        android:orderInCategory="101"
+        android:title="@string/action_load_url"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_load_html_page"
+        android:orderInCategory="102"
+        android:title="@string/action_htlm"
+        app:showAsAction="never" />
+
+    <!-- <item
+         android:id="@+id/action_bookmark"
+         android:icon="@drawable/ic_bookmark_black_24dp"
+         android:orderInCategory="100"
+         android:title="@string/action_bookmark"
+         app:showAsAction="always" />-->
+
+    <item
+        android:id="@+id/action_backward"
+        android:icon="@drawable/ic_chevron_left_black_24dp"
+        android:orderInCategory="103"
+        android:title="@string/action_back"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/action_forward"
+        android:icon="@drawable/ic_chevron_right_black_24dp"
+        android:orderInCategory="104"
+        android:title="@string/action_forward"
+        app:showAsAction="always" />
+</menu>
