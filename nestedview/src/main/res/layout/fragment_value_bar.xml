@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".music.ValueBarFragment">
+
+    <TextView
+        android:id="@+id/music_value_bar_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textColor="@color/colorAccent"
+        android:textSize="14dp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Showing Updation Progress" />
+
+
+    <com.example.nestedview.music.ValueBar
+        android:id="@+id/valueBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/value_bar_padding_horizontal"
+        android:paddingTop="@dimen/value_bar_padding_top"
+        android:paddingRight="@dimen/value_bar_padding_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/music_value_bar_title"
+        custom:barHeight="@dimen/value_bar_barHeight"
+        custom:baseColor="@color/navy"
+        custom:circleRadius="@dimen/value_bar_circleRadius"
+        custom:circleTextColor="@color/white"
+        custom:circleTextSize="@dimen/value_bar_circleTextSize"
+        custom:fillColor="@color/red"
+        custom:labelText="@string/valueBarLabel"
+        custom:labelTextColor="@color/navy"
+        custom:labelTextSize="@dimen/value_bar_labelTextSize"
+        custom:maxValueTextColor="@color/navy"
+        custom:maxValueTextSize="@dimen/value_bar_maxValueTextSize"
+        custom:spaceAfterBar="@dimen/value_bar_spaceAfterBar" />
+</android.support.constraint.ConstraintLayout>
