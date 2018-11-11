@@ -108,7 +108,6 @@
                 android:onClick="onLongPressed"
                 android:text="@string/long_coffee" />
 
-
         </LinearLayout>
     </ScrollView>
 

@@ -1,12 +1,21 @@
 package com.example.webview
 
+import android.content.pm.ApplicationInfo
+import android.graphics.Bitmap
+import android.net.http.SslError
+import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.support.annotation.RequiresApi
 import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
+import android.view.View
+import android.webkit.*
 
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.content_main.*
 
 // For Javascript and Native component communication
 // https://medium.com/@elye.project/making-android-interacting-with-web-app-921be14f99d8
@@ -84,7 +93,7 @@ class MainActivity : AppCompatActivity() {
                 //return super.shouldOverrideUrlLoading(view, request)
                 //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
 
-                web_view.loadUrl(request.url.toString())
+                web_view.loadUrl(request?.url.toString())
                 // }
                 return true
             }
@@ -131,7 +140,7 @@ class MainActivity : AppCompatActivity() {
                     handler?.proceed()  // Ignoring the SSL certificates error
                 }else
                 {*/
-                handler.cancel()
+                handler?.cancel()
                 //  }
 
             }
