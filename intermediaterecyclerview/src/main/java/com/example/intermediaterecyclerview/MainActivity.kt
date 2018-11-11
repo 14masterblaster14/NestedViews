@@ -26,8 +26,8 @@ import retrofit2.Callback
 import retrofit2.Response
 
 // API : https://api.nasa.gov/index.html#live_example
-// Key : gJ4SOAQMkhIBpvOCi9Ne766T4QlqZ2MEFUm9ovou
-// example : https://api.nasa.gov/planetary/apod?api_key=gJ4SOAQMkhIBpvOCi9Ne766T4QlqZ2MEFUm9ovou
+// Key : <your api key>
+// example : https://api.nasa.gov/planetary/apod?api_key=<your api key>
 // https://www.raywenderlich.com/172711/intermediate-recyclerview
 
 //private const val TAG = "MarsRover"
