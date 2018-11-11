@@ -10,14 +10,12 @@ import android.support.design.widget.Snackbar
 import android.support.v7.app.AppCompatActivity
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Button
+import android.widget.Toast
 import com.example.notifications.NotificationHelper.Companion.NOTIFICATION_COWORKER
 import com.example.notifications.NotificationHelper.Companion.NOTIFICATION_FOLLOW
 import com.example.notifications.NotificationHelper.Companion.NOTIFICATION_FRIEND
 import com.example.notifications.NotificationHelper.Companion.NOTIFICATION_FRIENDS
 import com.example.notifications.NotificationHelper.Companion.NOTIFICATION_UNFOLLOW
-import com.example.notifications.R.id.*
-
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
 
@@ -41,7 +39,14 @@ class MainActivity : AppCompatActivity() {
 
         follow_button.setOnClickListener { sendNotification(NOTIFICATION_FOLLOW) }
         unfollow_button.setOnClickListener { sendNotification(NOTIFICATION_UNFOLLOW) }
-        follower_channel_settings.setOnClickListener { gotoNotificationChannelSettings(NotificationHelper.FOLLOWERS_CHANNEL) }
+        follower_channel_settings.setOnClickListener {
+
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                gotoNotificationChannelSettings(NotificationHelper.FOLLOWERS_CHANNEL)
+            } else {
+                Toast.makeText(this, "Below Oreo, Channels Not Applicable", Toast.LENGTH_LONG).show()
+            }
+        }
 
         friend_message_button.setOnClickListener { sendNotification(NOTIFICATION_FRIEND) }
         coworker_message_button.setOnClickListener { sendNotification(NOTIFICATION_COWORKER) }

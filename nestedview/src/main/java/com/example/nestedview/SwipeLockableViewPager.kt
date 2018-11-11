@@ -6,7 +6,7 @@ import android.util.AttributeSet
 import android.view.MotionEvent
 
 /**
- *
+ *  14785
  */
 class SwipeLockableViewPager(context: Context, attrs: AttributeSet?) : ViewPager(context, attrs) {
 
