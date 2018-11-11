@@ -8,7 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import kotlinx.android.synthetic.main.content.view.*
 import kotlinx.android.synthetic.main.header.view.*
-import java.util.zip.Inflater
 
 class MyAdapter(var context: Context, var dataSet: ArrayList<Row>) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 

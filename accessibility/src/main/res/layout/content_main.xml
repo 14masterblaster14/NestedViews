@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.constraint.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
@@ -20,27 +22,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:nextFocusForward="@id/button_image"
         android:text="@string/button_text"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
+        <!--
+            android:nextFocusForward="@id/button_image"
+        -->
 
     <!-- An ImageButton. TalkBack cannot identify this button and
     reports it as "unlabelled button". Use android:contentDescription
     to provide a speakable label for the image. -->
-    <ImageButton
-        android:id="@+id/button_image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:contentDescription="Discard"
-        android:nextFocusForward="@id/checkbox_jetpack"
-        app:layout_constraintLeft_toRightOf="@+id/button_plain"
-        app:layout_constraintTop_toTopOf="@+id/button_plain"
-        app:srcCompat="@drawable/ic_action_discard" />
-
+        <!--<ImageButton
+            android:id="@+id/button_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:contentDescription="Discard"
+            android:nextFocusForward="@id/checkbox_jetpack"
+            app:layout_constraintLeft_toRightOf="@+id/button_plain"
+            app:layout_constraintTop_toTopOf="@+id/button_plain"
+            app:srcCompat="@drawable/ic_action_discard" />
+    -->
     <!-- Checkboxes. The checkbox text is read by TalkBack. No content
     description is needed. -->
     <CheckBox
@@ -74,9 +77,8 @@
         android:contentDescription="Partly Cloudy "
         android:focusable="true"
         app:layout_constraintLeft_toLeftOf="@+id/checkbox_hyperspace"
-
         app:layout_constraintTop_toBottomOf="@+id/checkbox_hyperspace"
-        app:srcCompat="@drawable/partly_cloudy" />
+        android:src="@drawable/partly_cloudy" />
     <!-- Note: In addition to making an item focusable, you can add focus-related attributes to the views in your app.
     The attributes include nextFocusUp, nextFocusDown, nextFocusLeft, nextFocusRight, and nextFocusForward. -->
 
@@ -85,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="Green box "
-        android:src="@drawable/ic_launcher_background"
+        app:srcCompat="@drawable/ic_launcher_background"
         app:layout_constraintLeft_toRightOf="@drawable/partly_cloudy"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@id/image_partly_cloudy" />
@@ -128,3 +130,4 @@
         app:layout_constraintTop_toBottomOf="@id/editText_comments" />
 
 </android.support.constraint.ConstraintLayout>
+</layout>
